@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static assets (free plan). Cloudflare builds and deploys every push
+  // to main, so each scheduled data refresh redeploys the site. Same setup as HStat.India.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "stormdesk-aman",
+  "compatibility_date": "2026-11-25",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
